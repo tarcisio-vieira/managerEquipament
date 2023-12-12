@@ -1,0 +1,8 @@
+button.AppButton {
+  background-color: #005aaf;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px;
+  border: none;
+  padding: 7px 10px;
+}

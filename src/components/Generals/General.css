@@ -1,0 +1,75 @@
+.tabs-container {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: -30px;
+  border-bottom: 1px solid #D6D7DA;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: none;
+  user-select: none;
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.tab.active {
+  border-bottom: 2px solid #005aaf;
+}
+
+.tab-content {
+  padding: 15px;
+}
+
+/* Estilo base para resetar estilos padrão do navegador */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #555; /* Cor cinza médio para o texto do valor selecionado */
+}
+
+/* Estilo quando o select está focado */
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para seta do select (apenas para navegadores que suportam o pseudo-elemento ::after) */
+select::after {
+  content: '\25BC'; /* Símbolo de seta para baixo */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333;
+}
+
+/* Estilo para opções do select */
+select option {
+  background-color: #fff;
+  color: #555; /* Cinza médio para texto não selecionado */
+  font-family: 'Arial', sans-serif; /* Substitua 'Arial' pela fonte desejada */
+}
+
+/* Estilo para opção selecionada */
+select option:checked {
+  color: #333; /* Cinza médio para texto selecionado */
+  font-weight: bold; /* Ajuste o peso da fonte conforme necessário */
+}
